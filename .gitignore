@@ -30,3 +30,9 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# Android Studio
+.idea*
+
+# Exclude string values
+app/src/main/res/values/azure_strings.xml
