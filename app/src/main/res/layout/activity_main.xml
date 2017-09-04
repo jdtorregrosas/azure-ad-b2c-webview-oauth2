@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jdtorregrosas.azure_ad_b2c_webview_oauth2.MainActivity">
+
+    <com.jdtorregrosas.azureadb2cwebviewoauth2.AzureAdB2CWebView
+        android:id="@+id/webview_login"
+        xmlns:azureb2c="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        azureb2c:tenant="@string/b2c_tenant"
+        azureb2c:signInPolicy="@string/b2c_policy"
+        azureb2c:redirectUri="@string/b2c_redirect_uri"
+        azureb2c:clientId="@string/b2c_client_id"
+        />
+</android.support.constraint.ConstraintLayout>
