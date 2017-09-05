@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AzureAdB2CWebView">
+        <attr name="tenant" format="string"/>
+        <attr name="clientId" format="string"/>
+        <attr name="redirectUri" format="string"/>
+        <attr name="signInPolicy" format="string"/>
+    </declare-styleable>
+</resources>
