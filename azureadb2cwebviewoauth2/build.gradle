@@ -49,7 +49,7 @@ ext {
     siteUrl = 'https://github.com/jdtorregrosas/azure-ad-b2c-webview-oauth2'
     gitUrl = 'https://github.com/jdtorregrosas/azure-ad-b2c-webview-oauth2.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'jdtorregrosas'
     developerName = 'Julián Torregrosa'
