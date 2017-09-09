@@ -23,10 +23,42 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }
+
+ext {
+    // Where you will see your artifact in Bintray's web interface
+    // The "bintrayName" should match the name of the Bintray repro.
+    bintrayRepo = 'android'
+    bintrayName = 'AzureAdB2cWebviewOauth2'
+
+    // Maven metadata
+    publishedGroupId = 'com.jdtorregrosas'
+    libraryName = 'AzureAdB2cWebviewOauth2'
+    // Save yourself a head ache, and set this equal to the name of the Android Studio library
+    // module. The artifact name needs to match the name of the library.
+    artifact = 'azureadb2cwebviewoauth2'
+
+    libraryDescription = 'A web view to sign in into azure b2c active directory'
+
+    siteUrl = 'https://github.com/jdtorregrosas/azure-ad-b2c-webview-oauth2'
+    gitUrl = 'https://github.com/jdtorregrosas/azure-ad-b2c-webview-oauth2.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'jdtorregrosas'
+    developerName = 'Julián Torregrosa'
+    developerEmail = 'jdtorregrosas@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
